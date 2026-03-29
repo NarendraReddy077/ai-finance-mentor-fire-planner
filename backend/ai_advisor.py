@@ -4,8 +4,8 @@ from typing import Dict, Any
 
 genai.configure(api_key=os.environ.get("GEMINI_API_KEY", ""))
 
-# Assuming the flash or pro model based on latest best practices
-model = genai.GenerativeModel('gemini-1.5-flash')
+# gemini model
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 def generate_financial_advice(user_inputs: dict, plan_summary: Dict[str, Any], goals: list) -> str:
     """Uses Gemini to generate personalized FIRE mentor text"""
