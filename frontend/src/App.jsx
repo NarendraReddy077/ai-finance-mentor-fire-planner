@@ -32,10 +32,10 @@ function App() {
       <div className="container mx-auto px-4 py-12 max-w-5xl">
         <header className="mb-12 text-center">
           <div className="inline-block mb-3 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-medium tracking-wide">
-            AI-Powered Mentor
+            AI-Powered Money Mentor
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-600">
-            FIRE Planner Framework
+            FIRE Path Planner
           </h1>
           <p className="text-slate-400 max-w-2xl mx-auto text-lg">
             Achieve Financial Independence. Retire Early. Generate a personalized roadmap tailored to your specific goals and risk appetite using advanced financial modeling and AI.
@@ -48,7 +48,7 @@ function App() {
               {error}
             </div>
           )}
-          
+
           {!resultData ? (
             <div className="glass-card rounded-2xl p-6 md:p-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
               <FinanceForm onSubmit={handleGeneratePlan} isLoading={loading} />
