@@ -47,7 +47,7 @@ export default function Dashboard({ data, onReset }) {
         <div className="glass-card p-6 rounded-2xl border-l-4 border-l-blue-500">
           <p className="text-slate-400 text-sm font-medium mb-1">Current Savings Rate</p>
           <div className="text-3xl font-bold text-white">
-            {(savings_rate * 100).toFixed(1)}%
+            {Number(savings_rate).toFixed(1)}%
           </div>
         </div>
         <div className="glass-card p-6 rounded-2xl border-l-4 border-l-rose-500">

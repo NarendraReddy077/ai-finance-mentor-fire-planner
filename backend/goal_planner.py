@@ -27,11 +27,10 @@ def plan_goals(goals, risk_appetite: str) -> list:
         )
         
         recommended_sips.append({
-            "name": goal.name,
-            "original_amount": goal.amount,
-            "inflated_amount": round(inflated_cost, 2),
-            "years": goal.years_to_goal,
-            "monthly_sip": sip,
+            "goal_name": goal.name,
+            "target_amount": round(inflated_cost, 2),
+            "years_to_goal": goal.years_to_goal,
+            "suggested_monthly_sip": sip,
             "expected_return_rate": annual_return
         })
         
