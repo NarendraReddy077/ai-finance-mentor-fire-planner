@@ -36,7 +36,7 @@ def generate_financial_advice(user_inputs: dict, plan_summary: Dict[str, Any], g
         if not os.environ.get("GEMINI_API_KEY"):
             return "⚠️ Gemini API key not found. Please add it to your .env file to unlock AI mentor advice!"
             
-        response = client.models.generate_content(model='gemini-1.5-flash', contents=prompt)
+        response = client.models.generate_content(model='gemini-2.5-flash', contents=prompt)
         return response.text
     except Exception as e:
         return f"Error connecting to AI mentor: {str(e)}"
